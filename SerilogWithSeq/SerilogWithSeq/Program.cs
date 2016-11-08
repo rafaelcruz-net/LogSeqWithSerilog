@@ -24,7 +24,7 @@ namespace SerilogWithSeq
                     Response = "Usuário salvo com sucesso"
                 };
 
-                log.Information("New Request {TransactionId}: {@request}", request.TransactionId, request);
+                log.Information("New Request: TransactionId:{TransactionId} Object:{@request}", request.TransactionId, request);
             }
             Console.Read();
         }
